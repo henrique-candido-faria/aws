@@ -1,0 +1,16 @@
+aws rds create-db-instance-read-replica \
+    --region us-east-1 \
+    --db-instance-identifier \
+    --source-db-instance-identifier \
+    --db-instance-class db.m3.xlarge \
+    --availability-zone us-east-1b \
+    --port 3306 \
+    --no-multi-az \
+    --auto-minor-version-upgrade \
+    --option-group-name default:mysql-5-6 \
+    --db-parameter-group-name \
+    --publicly-accessible \
+    --storage-type gp2 \
+    --copy-tags-to-snapshot \
+    --deletion-protection \
+    --profile 
