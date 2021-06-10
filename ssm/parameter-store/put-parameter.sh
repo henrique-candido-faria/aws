@@ -1,8 +1,7 @@
 aws ssm put-parameter \
-    --region us-east-2 \
+    --region \
     --name \
     --value \
     --type String \
     --overwrite \
     --profile 
-
